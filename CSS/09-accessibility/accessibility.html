@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Accessibility Demo</title>
+  <link rel="stylesheet" href="accessibility.css" />
+</head>
+<body>
+  <header>
+    <h1>Accessibility Best Practices Demo</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Form with Proper Labels</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" />
+
+        <fieldset>
+          <legend>Choose your preferred contact method:</legend>
+          <label>
+            <input type="radio" name="contact" value="email" checked />
+            Email
+          </label>
+          <label>
+            <input type="radio" name="contact" value="phone" />
+            Phone
+          </label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Keyboard Focus Styles</h2>
+      <p>Tab through the following links and buttons to see visible focus outlines:</p>
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <button>Button</button>
+      <input type="text" placeholder="Input focus" />
+    </section>
+
+    <section>
+      <h2>High Contrast Mode Support</h2>
+      <p>This paragraph will adapt in high contrast mode for better readability.</p>
+    </section>
+  </main>
+</body>
+</html>

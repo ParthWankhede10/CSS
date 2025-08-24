@@ -1,0 +1,61 @@
+/* =========================================================
+   02-text-fonts / text-effects.css
+   Transform: uppercase/lowercase/capitalize
+   Decoration: underline/overline/line-through + thickness & style
+   ========================================================= */
+
+:root {
+  --bg: #0b1220;
+  --panel: #0f172a;
+  --ink: #e5e7eb;
+  --muted: #9ca3af;
+  --border: #1f2937;
+  --accent: #38bdf8; /* sky-400 */
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--ink); font-family: system-ui, sans-serif; line-height: 1.7; }
+header, main { max-width: 880px; margin: 0 auto; padding: 24px 20px; }
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+/* Transform */
+.uppercase  { text-transform: uppercase; letter-spacing: 1px; }
+.lowercase  { text-transform: lowercase; }
+.capitalize { text-transform: capitalize; }
+
+/* Decoration */
+.underline { text-decoration: underline; }
+
+.underline-thick {
+  /* Control underline thickness & offset for better aesthetics */
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3px;
+}
+
+.overline-wavy {
+  text-decoration: overline wavy var(--accent);
+}
+
+.strike-dotted {
+  text-decoration-line: line-through;
+  text-decoration-style: dotted;
+  text-decoration-color: #fca5a5; /* red-300 */
+}
+
+/* Links without underline by default, show on hover for affordance */
+a.no-underline {
+  text-decoration: none;
+  color: var(--accent);
+}
+a.no-underline:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}

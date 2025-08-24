@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- 
+    Purpose: Load fonts from Google Fonts and apply to elements.
+    NOTE: In production you might self-host fonts to reduce TTFB & improve privacy.
+  -->
+  <title>02 • Google Fonts</title>
+
+  <!-- 1) Request fonts from Google Fonts (adjust weights/subsets as needed) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- 2) Your page-specific CSS -->
+  <link rel="stylesheet" href="google-fonts.css" />
+</head>
+<body>
+  <header>
+    <h1>Google Fonts: Poppins &amp; Roboto Slab</h1>
+    <p class="note">
+      Poppins (sans-serif) for UI headings &amp; Roboto Slab (serif) for editorial feel.
+    </p>
+  </header>
+
+  <main>
+    <article>
+      <h2 class="poppins-700">Poppins 700 — UI Heading</h2>
+      <p class="poppins-300">
+        Lightweight paragraph using <b>Poppins 300</b>. Great for clean, modern interfaces.
+      </p>
+    </article>
+
+    <article>
+      <h2 class="slab-700">Roboto Slab 700 — Editorial Heading</h2>
+      <p class="slab-400">
+        Body copy with <b>Roboto Slab 400</b> delivers a classic, bookish texture perfect
+        for articles and reading-heavy layouts.
+      </p>
+    </article>
+  </main>
+</body>
+</html>

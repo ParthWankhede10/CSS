@@ -1,0 +1,33 @@
+/* ================================
+   BACKGROUND SHORTHAND
+   - background: color image repeat position / size
+   - Combines multiple properties into one
+   ================================ */
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f9;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Using shorthand for background */
+.card {
+  background: 
+    #333 url('https://picsum.photos/400/200') 
+    no-repeat center / cover; 
+  /* Explanation:
+     - #333 → fallback color
+     - url(...) → background image
+     - no-repeat → don't repeat
+     - center → position
+     - cover → scale to cover area
+  */
+  color: white;
+  padding: 60px;
+  border-radius: 10px;
+}

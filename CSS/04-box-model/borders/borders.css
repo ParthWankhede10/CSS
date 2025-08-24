@@ -1,0 +1,27 @@
+/* ================================
+   Borders in CSS
+   ================================ */
+
+.border {
+  width: 200px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Solid border */
+.box1 {
+  border: 3px solid red;
+}
+
+/* Dashed border */
+.box2 {
+  border: 4px dashed blue;
+}
+
+/* Rounded border */
+.box3 {
+  border: 5px solid green;
+  border-radius: 15px; /* curve corners */
+}

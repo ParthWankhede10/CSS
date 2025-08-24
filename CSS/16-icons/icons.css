@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  background: #fefefe;
+  color: #222;
+  text-align: center;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  color: #0073e6;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+/* CSS Animations for SVG Star Icon */
+.svg-icon {
+  animation: pulse 2s infinite ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 5px #ffd700);
+  }
+  50% {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 15px #ffea00);
+  }
+}
+
+/* Font Awesome icons already have built-in spin animation classes */
+/* Additional slower or faster spin speeds can be customized with CSS */
+
+.fa-slower {
+  animation-duration: 4s !important;
+}
+
+.fa-faster {
+  animation-duration: 0.8s !important;
+}

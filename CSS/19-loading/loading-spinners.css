@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  color: #333;
+  text-align: center;
+  margin: 40px;
+}
+
+/* Spinner container */
+.spinner-container {
+  margin: 30px auto;
+}
+
+/* Spinner animation */
+.spinner {
+  margin: 0 auto 15px;
+  width: 60px;
+  height: 60px;
+  border: 6px solid #ddd;
+  border-top-color: #0073e6;
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+}
+
+/* Rotate spinner infinitely */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Box that rotates and scales on hover */
+.rotate-scale-box {
+  width: 120px;
+  height: 120px;
+  background-color: #0073e6;
+  color: white;
+  margin: 40px auto;
+  line-height: 120px;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+/* Rotate 15deg and scale 1.2x on hover */
+.rotate-scale-box:hover {
+  transform: rotate(15deg) scale(1.2);
+}

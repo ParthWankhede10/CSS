@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Theme Toggle Example</title>
+  <link rel="stylesheet" href="theme-toggle.css" />
+</head>
+<body>
+  <header>
+    <h1>Theme Toggle Demo</h1>
+    <button id="toggle-theme-btn" aria-label="Toggle theme">Switch Theme</button>
+  </header>
+
+  <main>
+    <section>
+      <h2>Welcome to the Themed Page!</h2>
+      <p>This page changes between light and dark themes using CSS variables.</p>
+    </section>
+  </main>
+
+  <script>
+    // Simple JS to toggle dark theme class on body
+    const btn = document.getElementById('toggle-theme-btn');
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-theme');
+    });
+  </script>
+</body>
+</html>

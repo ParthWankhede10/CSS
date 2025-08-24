@@ -1,0 +1,65 @@
+/* =========================================================
+   02-text-fonts / google-fonts.css
+   Goal: Apply Google Fonts loaded in the HTML <head>.
+   TIP: Always define fallbacks after your primary web font.
+   ========================================================= */
+
+:root {
+  --panel: #111827;
+  --ink: #e5e7eb;
+  --muted: #9ca3af;
+  --border: #1f2937;
+  --accent: #60a5fa;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #0b1220;
+  color: var(--ink);
+  font-family: Poppins, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.7;
+}
+
+header, main {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 24px 20px;
+}
+
+h1 { margin: 0 0 8px; }
+.note { color: var(--muted); margin: 0 0 16px; }
+
+article {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+/* Poppins usage (loaded via <link>) */
+.poppins-700 {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: #f8fafc;
+}
+
+.poppins-300 {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 300;
+  color: var(--accent);
+}
+
+/* Roboto Slab usage (loaded via <link>) */
+.slab-700 {
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 700;
+}
+
+.slab-400 {
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 400;
+}

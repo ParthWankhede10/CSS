@@ -1,0 +1,30 @@
+/* ================================
+   Margins in CSS
+   ================================ */
+
+/* General box styling */
+.box {
+  width: 200px;
+  height: 100px;
+  background-color: lightblue;
+  border: 2px solid navy;
+  text-align: center;
+  line-height: 100px;
+  margin-bottom: 20px; /* spacing between examples */
+}
+
+/* Margin all around */
+.box1 {
+  margin: 20px; /* top, right, bottom, left = 20px */
+}
+
+/* Margin with different values (clockwise) */
+.box2 {
+  margin: 10px 30px 50px 70px; 
+  /* top = 10px, right = 30px, bottom = 50px, left = 70px */
+}
+
+/* Center horizontally using auto */
+.box3 {
+  margin: 0 auto; /* top-bottom=0, left-right=auto (center) */
+}

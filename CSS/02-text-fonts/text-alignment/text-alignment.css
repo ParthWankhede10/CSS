@@ -1,0 +1,49 @@
+/* =========================================================
+   02-text-fonts / text-alignment.css
+   Alignment: left | right | center | justify
+   Bonus: text-align-last for better control of the final line.
+   ========================================================= */
+
+:root {
+  --bg: #0b1220;
+  --panel: #0f172a;
+  --ink: #e5e7eb;
+  --muted: #9ca3af;
+  --border: #1f2937;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.7;
+}
+
+header, main { max-width: 880px; margin: 0 auto; padding: 24px 20px; }
+h1 { margin: 0 0 8px; }
+.hint { color: var(--muted); margin: 0 0 16px; }
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.narrow { max-width: 560px; }
+
+/* Core alignments */
+.left   { text-align: left; }
+.right  { text-align: right; }
+.center { text-align: center; }
+.justify{ text-align: justify; }
+
+/* Control the final line when text-align is justify */
+.justify-last {
+  text-align: justify;
+  text-align-last: center;  /* final line centers */
+}

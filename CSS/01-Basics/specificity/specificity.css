@@ -1,0 +1,30 @@
+/* ===============================
+   SPECIFICITY DEMO
+   =============================== */
+
+/* Element selector → lowest specificity */
+p {
+  color: blue;
+}
+
+/* Class selector → higher specificity */
+.text {
+  color: green;
+}
+
+/* Multiple classes → combined specificity */
+.text.highlight {
+  color: orange;
+}
+
+/* ID selector → even higher */
+#main-title {
+  color: purple;
+}
+
+/* Inline styles → highest (if applied in HTML, e.g., style="color:red") */
+
+/* !important → overrides everything */
+p {
+  color: gray !important;
+}

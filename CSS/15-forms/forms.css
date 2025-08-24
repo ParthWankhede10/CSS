@@ -1,0 +1,96 @@
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  margin: 30px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Form Container */
+.animated-form {
+  max-width: 400px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 12px;
+}
+
+/* Form Group */
+.form-group {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+/* Input fields */
+.form-group input {
+  width: 100%;
+  padding: 12px 12px 12px 10px;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: none;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+/* Animated label */
+.form-group label {
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  color: #888;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* Border animation on focus */
+.focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: #0073e6;
+  transition: width 0.3s ease;
+}
+
+/* Input focus state */
+.form-group input:focus {
+  border-bottom-color: #0073e6;
+}
+
+.form-group input:focus ~ label,
+.form-group input:not(:placeholder-shown) ~ label {
+  top: -10px;
+  font-size: 0.8rem;
+  color: #0073e6;
+  font-weight: bold;
+}
+
+.form-group input:focus ~ .focus-border {
+  width: 100%;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  background-color: #0073e6;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #005bb5;
+}

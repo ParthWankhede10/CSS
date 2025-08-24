@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>02 • Text Alignment</title>
+  <link rel="stylesheet" href="text-alignment.css" />
+</head>
+<body>
+  <header>
+    <h1>Text Alignment Examples</h1>
+    <p class="hint">We’ll demo left, right, center, justify, and <code>text-align-last</code>.</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>Left (default)</h2>
+      <p class="left">
+        Left-aligned text is the default for LTR languages. It’s easy to read and natural for most readers.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>Right</h2>
+      <p class="right">
+        Right alignment is sometimes used for dates or small UI elements to visually balance a layout.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>Center</h2>
+      <p class="center">
+        Center alignment is popular for titles or short lines of text, but avoid using it for long paragraphs.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>Justify (+ Last Line)</h2>
+      <p class="justify">
+        Justified text spreads space so each line touches both left and right edges. On the last line, we can override the
+        alignment using <code>text-align-last</code> to avoid awkward spacing artifacts on a short final line.
+      </p>
+    </section>
+
+    <section class="panel narrow">
+      <h2>Demonstrating <code>text-align-last</code></h2>
+      <p class="justify-last">
+        This paragraph is justified for all but the final line. The last line is centered via
+        <code>text-align-last: center</code> to reduce odd word gaps.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

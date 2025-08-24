@@ -1,0 +1,35 @@
+/* ================================
+   BACKGROUND IMAGE
+   - Add images as backgrounds
+   - Control how they repeat, size, position
+   ================================ */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Banner with full-cover background */
+.banner {
+  background-image: url('https://picsum.photos/800/300'); /* random image */
+  background-size: cover;   /* scale image to cover div */
+  background-position: center;
+  color: white;
+  padding: 60px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Div with repeating pattern */
+.repeat {
+  background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png'); 
+  background-repeat: repeat;   /* repeats pattern */
+  padding: 40px;
+  border: 2px solid #333;
+}

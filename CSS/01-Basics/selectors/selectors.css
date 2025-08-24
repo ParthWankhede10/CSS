@@ -1,0 +1,33 @@
+/* Universal selector */
+* {
+  font-family: Arial, sans-serif;
+}
+
+/* Type selector */
+h1 {
+  color: darkblue;
+}
+
+/* Class selector */
+.highlight {
+  background: yellow;
+  padding: 4px;
+}
+
+/* ID selector */
+#unique {
+  color: red;
+  font-weight: bold;
+}
+
+/* Descendant selector */
+div span {
+  color: green;
+}
+
+/* Pseudo-class */
+button:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+}

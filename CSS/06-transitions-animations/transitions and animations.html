@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>06 - Transitions & Animations</title>
+  <style>
+    /* ===== GLOBAL STYLES ===== */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.5;
+    }
+    h1, h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+      color: #222;
+      margin-top: 40px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    /* ===== 1. CSS TRANSITIONS ===== */
+    .transition-btn {
+      background-color: #0073e6;
+      color: white;
+      padding: 16px 32px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.4s ease, transform 0.4s ease;
+      /* Smooth transition for color and scale */
+    }
+    .transition-btn:hover {
+      background-color: #3399ff;
+      transform: scale(1.1);
+    }
+    /* ===== 2. KEYFRAMES ANIMATION ===== */
+    .keyframe-box {
+      width: 60px;
+      height: 60px;
+      background-color: #ee6c4d;
+      border-radius: 12px;
+      margin: 20px 0;
+      animation: moveRight 2s infinite alternate ease-in-out;
+    }
+    @keyframes moveRight {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(200px);
+      }
+    }
+    /* ===== 3. BOUNCING BALL ANIMATION ===== */
+    .bounce-ball {
+      width: 40px;
+      height: 40px;
+      background-color: #4bb543;
+      border-radius: 50%;
+      margin: 24px 0;
+      position: relative;
+      animation: bounce 1s infinite cubic-bezier(.5, .05, 1, .5);
+    }
+    @keyframes bounce {
+      0%, 100% {
+        top: 0;
+      }
+      50% {
+        top: -80px;
+      }
+    }
+    /* ===== 4. 2D TRANSFORM ON HOVER ===== */
+    .transform-2d {
+      width: 90px;
+      height: 90px;
+      background-color: #ffd166;
+      border-radius: 16px;
+      margin: 16px 0;
+      transition: transform 0.4s ease;
+    }
+    .transform-2d:hover {
+      transform: rotate(-18deg) scale(1.2);
+    }
+    /* ===== 5. 3D TRANSFORM ON HOVER ===== */
+    .transform-3d {
+      width: 90px;
+      height: 90px;
+      background-color: #073b4c;
+      color: white;
+      font-weight: bold;
+      border-radius: 20px;
+      margin: 16px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.6s ease;
+      perspective: 500px;
+      cursor: pointer;
+    }
+    .transform-3d:hover {
+      transform: rotateY(50deg) rotateX(25deg) scale(1.1);
+    }
+    /* ===== 6. HOVER EFFECTS CARD ===== */
+    .hover-card {
+      width: 200px;
+      height: 80px;
+      background-color: #fff3cd;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(50, 50, 50, 0.13);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+      cursor: pointer;
+      transition: box-shadow 0.35s ease, transform 0.35s ease;
+      user-select: none;
+    }
+    .hover-card:hover {
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.23);
+      transform: translateY(-6px);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>06 - Transitions & Animations</h1>
+    <p>A demo of CSS transitions, keyframe animations, 2D & 3D transforms, and hover effects.</p>
+  </header>
+  
+  <section>
+    <h2>1. CSS Transitions</h2>
+    <button class="transition-btn">Hover Me!</button>
+  </section>
+
+  <section>
+    <h2>2. Keyframes Animation</h2>
+    <div class="keyframe-box"></div>
+  </section>
+
+  <section>
+    <h2>3. Bouncing Ball Animation</h2>
+    <div class="bounce-ball"></div>
+  </section>
+
+  <section>
+    <h2>4. 2D Transform on Hover</h2>
+    <div class="transform-2d"></div>
+  </section>
+
+  <section>
+    <h2>5. 3D Transform on Hover</h2>
+    <div class="transform-3d">3D</div>
+  </section>
+
+  <section>
+    <h2>6. Hover Effects Card</h2>
+    <div class="hover-card">Hover over me!</div>
+  </section>
+</body>
+</html>

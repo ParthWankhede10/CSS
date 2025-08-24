@@ -1,0 +1,23 @@
+/* ===============================
+   CASCADE DEMO
+   =============================== */
+
+/* Rule 1: General heading style */
+h1 {
+  color: blue;
+}
+
+/* Rule 2: Class style → comes later, so overrides */
+.headline {
+  color: green;
+}
+
+/* Rule 3: Same selector repeated → later one wins */
+h1 {
+  color: red;
+}
+
+/* Rule 4: If conflicts → browser decides using cascade rules:
+   - Importance (!important)
+   - Specificity
+   - Source order */

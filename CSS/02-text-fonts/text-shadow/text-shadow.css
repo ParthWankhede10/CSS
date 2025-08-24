@@ -1,0 +1,47 @@
+/* =========================================================
+   02-text-fonts / text-shadow.css
+   Show common patterns: subtle, glow, neon, emboss
+   ========================================================= */
+
+:root {
+  --bg: #0b1220;
+  --ink: #e5e7eb;
+  --muted: #9ca3af;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; background: radial-gradient(1200px 800px at 80% 0%, #0f172a, #0b1220); color: var(--ink); font-family: system-ui, sans-serif; }
+header, main { max-width: 880px; margin: 0 auto; padding: 24px 20px; }
+
+h1 { margin: 0 0 6px; }
+.hint { color: var(--muted); margin: 0 0 16px; }
+
+h2 { margin: 18px 0; font-size: 2rem; }
+
+/* Subtle shadow improves contrast slightly */
+.subtle {
+  text-shadow: 0 1.5px 2.5px rgba(0, 0, 0, 0.45);
+}
+
+/* Soft outer glow for headings on imagery/dark BGs */
+.soft-glow {
+  text-shadow: 0 0 10px rgba(148, 163, 184, 0.6); /* slate-400 glow */
+}
+
+/* Neon sign effect: stack multiple strong glows */
+.neon {
+  color: #22d3ee; /* cyan-400 */
+  text-shadow:
+    0 0 6px  #22d3ee,
+    0 0 14px #22d3ee,
+    0 0 28px #0891b2,
+    0 0 42px #0369a1;
+}
+
+/* Emboss / letterpress: light highlight + darker offset */
+.emboss {
+  color: #e2e8f0; /* slate-200 */
+  text-shadow:
+    1px 1px 0 #0b1220,    /* dark bottom-right */
+   -1px -1px 0 #ffffff40; /* light top-left (semi) */
+}

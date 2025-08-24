@@ -1,0 +1,25 @@
+/* ================================
+   Padding in CSS
+   ================================ */
+
+.pad {
+  background-color: lightgreen;
+  border: 2px solid darkgreen;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+/* Padding all sides equal */
+.box1 {
+  padding: 20px;
+}
+
+/* Padding top-bottom 10px, left-right 40px */
+.box2 {
+  padding: 10px 40px;
+}
+
+/* Padding top, right, bottom, left all different */
+.box3 {
+  padding: 5px 15px 25px 35px;
+}

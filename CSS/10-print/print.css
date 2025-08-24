@@ -1,0 +1,73 @@
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #fafafa;
+  color: #222;
+}
+
+h1, p {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* CSS Grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+/* Grid items */
+.box {
+  background-color: #87ceeb;
+  padding: 30px;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Footer styles */
+.footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #777;
+}
+
+/* PRINT specific styles */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  /* Remove shadows and colors for print */
+  .box {
+    background: white;
+    box-shadow: none;
+    color: black;
+    border: 1px solid #000;
+    page-break-inside: avoid; /* Avoid splitting boxes across pages */
+  }
+
+  /* Make grid one column on print for better page fit */
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  /* Hide header and footer on print */
+  header, footer {
+    display: none;
+  }
+
+  p {
+    text-align: left;
+  }
+}

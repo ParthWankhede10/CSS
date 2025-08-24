@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lists & Tables Demo</title>
+  <!-- Linking external stylesheet -->
+  <link rel="stylesheet" href="lists-tables.css">
+</head>
+<body>
+
+  <header>
+    <h1>05 - Lists & Tables Demo</h1>
+    <p>This file demonstrates different list styles and table styles in CSS.</p>
+  </header>
+
+  <!-- ========== LISTS SECTION ========== -->
+  <section>
+    <h2>Unordered Lists</h2>
+    <ul class="custom-ul">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Cherry</li>
+      <li>Dragonfruit</li>
+      <li>Elderberry</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Ordered Lists (Nested)</h2>
+    <ol class="custom-ol">
+      <li>India
+        <ol>
+          <li>Maharashtra</li>
+          <li>West Bengal</li>
+        </ol>
+      </li>
+      <li>USA
+        <ol>
+          <li>New York</li>
+          <li>California</li>
+        </ol>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Description List</h2>
+    <dl class="custom-dl">
+      <dt><strong>HTML</strong></dt>
+      <dd>HyperText Markup Language, used for structuring webpages.</dd>
+      <dt><strong>CSS</strong></dt>
+      <dd>Cascading Style Sheets, used for styling webpages.</dd>
+      <dt><strong>JavaScript</strong></dt>
+      <dd>A programming language for adding interactivity to web pages.</dd>
+    </dl>
+  </section>
+
+  <!-- ========== TABLE SECTION ========== -->
+  <section>
+    <h2>Student Marks Table</h2>
+    <div class="table-container">
+      <!-- Wrapping in container for responsive scroll -->
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Marks</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Aarav</td>
+            <td>Math</td>
+            <td>95</td>
+            <td>A+</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Priya</td>
+            <td>Science</td>
+            <td>89</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Rahul</td>
+            <td>English</td>
+            <td>76</td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Simran</td>
+            <td>History</td>
+            <td>92</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Vikas</td>
+            <td>Geography</td>
+            <td>68</td>
+            <td>C</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CSS Practice - Lists & Tables</p>
+  </footer>
+
+</body>
+</html>

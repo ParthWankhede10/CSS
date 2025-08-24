@@ -1,0 +1,66 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  color: #333;
+  background-color: #f8f8f8;
+}
+
+h1, h2 {
+  color: #222;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+  margin-top: 40px;
+}
+
+/* Container with flexible boxes */
+.container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Boxes with fixed width and height */
+.box {
+  background-color: #0073e6;
+  color: white;
+  width: 30%;
+  padding: 40px 0;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+}
+
+/* Box hover effect */
+.box:hover {
+  background-color: #3399ff;
+}
+
+/* Responsive layout: stack boxes vertically on narrow screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .box {
+    width: 100%;
+    padding: 30px 0;
+  }
+}
+
+/* Fluid Typography: font size sized fluidly between min and max */
+.text-section p {
+  font-size: clamp(14px, 2vw, 18px);
+  max-width: 600px;
+  margin-top: 10px;
+}
+
+/* Responsive Image */
+.responsive-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 10px;
+}

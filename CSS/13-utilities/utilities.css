@@ -1,0 +1,49 @@
+/* Utility classes for spacing */
+.m-20 { margin: 20px !important; }
+.p-20 { padding: 20px !important; }
+
+/* Typography utilities */
+.text-center { text-align: center !important; }
+.text-right { text-align: right !important; }
+.text-bold { font-weight: bold !important; }
+.text-italic { font-style: italic !important; }
+.text-large { font-size: 1.5rem !important; }
+.text-small { font-size: 0.8rem !important; }
+
+/* Background colors */
+.bg-light { background-color: #f8f9fa; }
+.bg-primary { background-color: #007bff; color: white; }
+.bg-secondary { background-color: #6c757d; color: white; }
+.bg-tertiary { background-color: #28a745; color: white; }
+
+/* Flexbox utilities */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.space-between {
+  justify-content: space-between;
+}
+.flex-item {
+  padding: 15px;
+  border-radius: 6px;
+  flex: 1 1 30%;
+  margin: 5px;
+  text-align: center;
+}
+
+/* Helper classes */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.p-10 {
+  padding: 10px !important;
+}

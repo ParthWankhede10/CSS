@@ -1,0 +1,78 @@
+/* CSS Variables for Light Theme */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --link-color: #1a73e8;
+  --header-bg: #f0f0f0;
+  --button-bg: #1a73e8;
+  --button-text: #ffffff;
+}
+
+/* Dark Theme Variables */
+body.dark-theme {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --link-color: #8ab4f8;
+  --header-bg: #1e1e1e;
+  --button-bg: #8ab4f8;
+  --button-text: #121212;
+}
+
+/* Base Styles using CSS variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  background-color: var(--header-bg);
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button#toggle-theme-btn {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button#toggle-theme-btn:hover,
+button#toggle-theme-btn:focus {
+  filter: brightness(0.9);
+  outline: none;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Automatically prefers dark mode on user OS choice */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  header {
+    background-color: #1e1e1e;
+  }
+  button#toggle-theme-btn {
+    background-color: #8ab4f8;
+    color: #121212;
+  }
+}

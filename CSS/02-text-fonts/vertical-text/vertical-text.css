@@ -1,0 +1,58 @@
+/* =========================================================
+   02-text-fonts / vertical-text.css
+   True vertical writing with writing-mode + text-orientation.
+   Fallback: rotate() if vertical modes aren’t desired.
+   ========================================================= */
+
+:root {
+  --bg: #0b1220;
+  --panel: #0f172a;
+  --ink: #e5e7eb;
+  --muted: #9ca3af;
+  --border: #1f2937;
+  --accent: #60a5fa;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--ink); font-family: system-ui, sans-serif; line-height: 1.7; }
+
+header, .grid { max-width: 880px; margin: 0 auto; padding: 24px 20px; }
+h1 { margin: 0 0 6px; }
+.hint { color: var(--muted); margin: 0 0 16px; }
+
+/* Simple responsive three-up grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+/* True vertical text flows */
+.vertical-rl { writing-mode: vertical-rl; }
+.vertical-lr { writing-mode: vertical-lr; }
+
+/* Keep Latin letters upright instead of rotated glyphs */
+.upright { text-orientation: upright; }
+
+/* Decorative framing so vertical text is obvious */
+.vertical-rl, .vertical-lr, .sideways-rotate {
+  border: 1px dashed #334155; /* slate-700 */
+  padding: 10px;
+  min-height: 160px;
+  display: inline-block;
+}
+
+/* Fallback technique: simply rotate a horizontal line */
+.sideways-rotate {
+  transform: rotate(90deg);
+  transform-origin: left top;
+  white-space: nowrap;   /* prevent wrapping while rotated */
+  color: var(--accent);
+}

@@ -1,0 +1,24 @@
+/* ===============================
+   INHERITANCE DEMO
+   =============================== */
+
+section {
+  font-family: Arial, sans-serif; /* Children inherit this font */
+  color: darkblue; /* Children also inherit text color */
+}
+
+/* Example where inheritance is blocked */
+.no-inherit {
+  color: initial; /* Reset to default, does not inherit */
+}
+
+/* Example where inheritance is forced */
+div {
+  border: 1px solid gray;
+  padding: 10px;
+  color: crimson;
+}
+
+div p {
+  color: inherit; /* Force inheritance explicitly */
+}

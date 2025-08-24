@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- 
+    Purpose: Demonstrate core font properties and the fallback stack.
+    Link your CSS file that contains the styles for this page.
+  -->
+  <title>02 • Fonts (System & Fallbacks)</title>
+  <link rel="stylesheet" href="fonts.css" />
+</head>
+<body>
+  <header>
+    <h1>System Fonts & Fallbacks</h1>
+    <p class="lead">
+      This page shows how <code>font-family</code>, <code>font-weight</code>, <code>font-style</code>,
+      and <code>font-variant</code> behave across headings, paragraphs, and code blocks.
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Serif vs Sans-Serif vs Monospace</h2>
+      <p class="serif">
+        Serif paragraph — typically used for long-form reading. Notice the small “feet” on letter strokes.
+      </p>
+      <p class="sans">
+        Sans-serif paragraph — great for UI and screens. Clean, no extra stroke endings.
+      </p>
+      <p class="mono">
+        Monospace paragraph — every character has equal width; ideal for code and tabular alignment.
+      </p>
+      <pre class="mono code-block">
+// Monospace shines for code:
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+      </pre>
+    </section>
+
+    <section>
+      <h2>Weights, Styles & Variants</h2>
+      <p class="weight-light">This uses <b>font-weight: 300 (light)</b>.</p>
+      <p class="weight-normal">This uses <b>font-weight: 400/normal</b>.</p>
+      <p class="weight-bold">This uses <b>font-weight: 700/bold</b>.</p>
+
+      <p class="style-italic">This uses <i>font-style: italic</i>.</p>
+      <p class="small-caps">This uses <span>small-caps</span> via <code>font-variant</code>.</p>
+    </section>
+
+    <section>
+      <h2>Shorthand <code>font</code> Property</h2>
+      <p class="font-shorthand">
+        The <code>font</code> shorthand sets style, variant, weight, size/line-height, and family in one go.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
